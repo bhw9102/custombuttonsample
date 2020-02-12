@@ -1,3 +1,5 @@
 from django.db import models
 
-# Create your models here.
+
+class Case(models.Model):
+    content = models.CharField(max_length=16, null=True, blank=True, default='default content')
